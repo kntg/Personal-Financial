@@ -1,0 +1,151 @@
+:root {
+  --marg: 10px;
+  --marg-bottom: 30px;
+  --background: linear-gradient(rgb(255, 255, 255));
+}
+
+body{
+    overflow: hidden;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 153, 255));
+}
+
+.today { border: 2px solid rgb(64, 118, 255);}
+
+.filled-day {
+    background-color: #00f7ff; /* light green background */
+    position: relative;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    height: 100vh;
+}
+
+.judul{
+    color:#ffffff;
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    margin: 20px var(--marg) 20px var(--marg);
+}
+
+.content-container-row{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    margin: var(--marg) 0px 0px 0px;
+}
+
+.content-container-column-1{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 8;
+}
+
+.content-container-column-2{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.table-of-content-1{
+    background-image: var(--background);
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    margin: 0px var(--marg) var(--marg) var(--marg);
+    border-radius: 20px;
+}
+
+.table-of-content-2{
+    background-image: var(--background);
+    display: inline-block;
+    flex-grow: 0;
+    margin: 0px var(--marg) var(--marg-bottom) var(--marg);
+    border-radius: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 553px
+}
+
+.transaksi-table, .transaksi-table td, .transaksi-table th{
+    border: 1px solid black;
+    height: auto;
+    border-collapse: collapse;
+}
+
+.transaksi-table{
+    width: 95%;
+}
+
+.graph{
+    background-image: var(--background);
+    display: inline-block;
+    flex-grow: 0;
+    margin: 0px var(--marg) var(--marg) 0px;
+    border-radius: 20px;
+    height: 200px;
+    padding: 20px 10px 20px 60px;
+}
+
+.calendar{
+    background-image: var(--background);
+    display: inline-block;
+    flex-grow: 1;
+    margin: 0px var(--marg) var(--marg-bottom) 0px;
+    border-radius: 20px;
+    align-content: center;
+    padding-left: 15%;
+}
+
+.dates{
+    padding-right: 20px;
+    font-weight: bolder;
+    font-size: larger;
+    color: rgb(0, 145, 255);
+}
+
+button.delete-btn {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button.delete-btn:hover {
+  background: darkred;
+}
+
+.transaksi-table td:last-child{
+  border: none;
+  width: 0%;
+}
+
+.penutup{
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgb(255, 255, 255));
+    height: 70px;
+    width: 75%;
+    bottom: 27.5px;
+    left: 55px;
+    display: inline-flex;
+    position: absolute;
+}
+
+.dompet{
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-top: 28px;
+    padding-left: 400px;
+}
+
+.jumlah-total{
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-top: 28px;
+    padding-left: 181px;
+}
