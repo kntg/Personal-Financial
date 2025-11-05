@@ -30,6 +30,10 @@ body{
     font-size: 40px;
     display: block;
     text-align: center;
+<<<<<<< HEAD
+=======
+    /* padding-top: 100px; */
+>>>>>>> my-fix
     margin: 20px var(--marg) 20px var(--marg);
 }
 
@@ -64,12 +68,20 @@ body{
 .table-of-content-2{
     background-image: var(--background);
     display: inline-block;
+<<<<<<< HEAD
     flex-grow: 0;
+=======
+    flex-grow: 1;
+>>>>>>> my-fix
     margin: 0px var(--marg) var(--marg-bottom) var(--marg);
     border-radius: 20px;
     overflow-y: auto;
     overflow-x: hidden;
+<<<<<<< HEAD
     height: 553px
+=======
+    /* height: 553px */
+>>>>>>> my-fix
 }
 
 .transaksi-table, .transaksi-table td, .transaksi-table th{
@@ -129,23 +141,38 @@ button.delete-btn:hover {
 .penutup{
     background-image: linear-gradient(rgba(255, 255, 255, 0),rgb(255, 255, 255));
     height: 70px;
+<<<<<<< HEAD
     width: 75%;
     bottom: 27.5px;
     left: 55px;
     display: inline-flex;
     position: absolute;
+=======
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+>>>>>>> my-fix
 }
 
 .dompet{
     font-size: xx-large;
     font-weight: bolder;
     padding-top: 28px;
+<<<<<<< HEAD
     padding-left: 400px;
+=======
+    padding-left: 35%;
+>>>>>>> my-fix
 }
 
 .jumlah-total{
     font-size: xx-large;
     font-weight: bolder;
     padding-top: 28px;
+<<<<<<< HEAD
     padding-left: 181px;
+=======
+    padding-left: 5%;
+>>>>>>> my-fix
 }
