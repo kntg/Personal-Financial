@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>finance</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <link
+      rel="stylesheet"
+      href="../src/index.css"
+  />
+  <body>
+    <div class="flex-container">
+
+      <div class="judul">Personal Finance</div>
+
+      <div class="content-container-row">
+
+        <div class="content-container-column-1">
+          <div class="table-of-content-1">
+            <div class="dompet">Dompet</div>
+            <div class="jumlah-total" id="jumlahTotal"></div>
+          </div>
+
+          <div style="position: relative; padding-left: 50px;" class="table-of-content-2">
+            <!-- <div class="penutup"></div> -->
+
+            <form id="transaksiForm" style="padding-top: 30px; padding-bottom: 10px; font-weight: bolder;">
+              <span>Tambah Transaksi :</span>
+              <select name="jenis" id="jenis" placeholder="Jenis">
+                <option value="pengeluaran">pengeluaran</option>
+                <option value="pemasukan">pemasukan</option>
+              </select>
+              <input type="text" id="kategori" placeholder="Kategori" required>
+              <input type="number" id="jumlah" placeholder="Jumlah" required>
+              <select name="status" id="status" placeholder="Status">
+                <option value="lunas">lunas</option>
+                <option value="belum lunas">belum lunas</option>
+              </select>
+              <button type="submit">Tambah</button>
+            </form>
+
+            <div id="transaksiContainer" style="overflow-y: auto; height: 350px;"></div>
+          </div>
+        </div>
+
+        <div class="content-container-column-2">
+          <div class="graph">
+            <canvas id="pengeluaranChart"></canvas>
+          </div>
+
+          <div class="calendar">
+            	<span class="dates" id="dateHolder"></span> 
+              <input type="date" id="myDate">
+              <br>
+              <table id="calWrapper">
+              </table>      
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <script src="../src/index.js"></script>
+  </body>
+</html>

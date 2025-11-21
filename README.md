@@ -1,3 +1,4 @@
-# Personal-Financial
+# Personal-Finance
 
-Personal Financial merupakan website yang bertujuan untuk membantu anda dalam melakukan catatan keuangan terhadap transaksi yang dilakukan di kehidupan anda.
+Personal Finance merupakan website yang bertujuan untuk membantu anda dalam melakukan catatan keuangan terhadap transaksi yang dilakukan di kehidupan anda.
+
