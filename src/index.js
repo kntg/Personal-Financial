@@ -294,6 +294,10 @@ window.addEventListener("storage", updatePengeluaranChart);
 
 
 const btn1 = document.getElementById("subscriptionBtn");
+const btn2 = document.getElementById("profileBtn");
+const subDis1 = document.getElementById("subBlurs");
+const subDis2 = document.getElementById("subCons");
+const subClos = document.getElementById("subClos");
 
 btn1.addEventListener("mouseover", () => {
     btn1.style.backgroundColor = "rgb(159, 0, 0)";
@@ -303,7 +307,15 @@ btn1.addEventListener("mouseout", () => {
     btn1.style.backgroundColor = "";
 });
 
-const btn2 = document.getElementById("profileBtn");
+btn1.addEventListener("click", () =>{
+    subDis1.style.display = "flex";
+    subDis2.style.display = "flex";
+});
+
+subClos.addEventListener("click", () =>{
+    subDis1.style.display = "none";
+    subDis2.style.display = "none";
+});
 
 btn2.addEventListener("mouseover", () => {
     btn2.style.backgroundColor = "rgb(0, 0, 159)";
