@@ -31,7 +31,6 @@ body{
     font-size: 40px;
     display: block;
     text-align: center;
-    /* padding-top: 100px; */
 }
 
 .content-container-row{
@@ -164,11 +163,45 @@ button.delete-btn:hover {
 .profile{
     color:#ffffff;
     position: absolute;
-    top: 0;
+    top: 2px;
     right: 15px;
     background-color: rgb(0, 0, 255);
     padding: 22px;
     border-style: solid;
     border-color: white;
     border-radius: 50%;
+}
+
+.subContainer{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    padding: 20% 40%;
+    top: 5%;
+    left: 10%;
+    position: absolute;
+    display: none;
+}
+
+.subBlur{
+    background-color: rgba(0, 0, 0, 0.333);
+    filter: blur(100px);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+}
+
+.subClose{
+    position: absolute;
+    padding: 5px 10px;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px;
+    top: 20px;
+    right: 35px;
+    font-weight: bolder;
+    font-size: large;
+    color: red;
 }
