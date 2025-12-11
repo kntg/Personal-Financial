@@ -291,3 +291,24 @@ function updatePengeluaranChart() {
 
 document.addEventListener("DOMContentLoaded", updatePengeluaranChart);
 window.addEventListener("storage", updatePengeluaranChart);
+
+
+const btn1 = document.getElementById("subscriptionBtn");
+
+btn1.addEventListener("mouseover", () => {
+    btn1.style.backgroundColor = "rgb(159, 0, 0)";
+});
+
+btn1.addEventListener("mouseout", () => {
+    btn1.style.backgroundColor = "";
+});
+
+const btn2 = document.getElementById("profileBtn");
+
+btn2.addEventListener("mouseover", () => {
+    btn2.style.backgroundColor = "rgb(0, 0, 159)";
+});
+
+btn2.addEventListener("mouseout", () => {
+    btn2.style.backgroundColor = "";
+});
