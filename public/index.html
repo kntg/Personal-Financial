@@ -42,7 +42,7 @@
             </form>
 
             <div id="transaksiContainer" style="overflow-y: auto; height: 350px;"></div>
-            <button class="subscription" id="subscriptionBtn">Subscription</button>
+            <button class="subscription" id="subscriptionBtn" onmouseover='this.style.cursor = "pointer"'>Subscription</button>
           </div>
         </div>
 
@@ -59,10 +59,14 @@
               </table>      
           </div>
         </div>
-
       </div>
-
     </div>
+
+    <div id="subBlurs" class="subBlur"></div>
+    <div id="subCons" class="subContainer">
+      <button id="subClos" class="subClose" onmouseover='this.style.cursor = "pointer"'>X</button>
+    </div>
+
     <script src="../src/index.js"></script>
   </body>
 </html>
